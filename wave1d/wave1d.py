@@ -62,7 +62,7 @@ def settings():
     #1) simple function
     #s['h_left'] = 2.5 * np.sin(2.0*np.pi/(12.*hours_to_seconds)*t)
     #2) read from file
-    (bound_times,bound_values)=timeseries.read_series('/Users/markussandnes/Desktop/TU DELFT/Data assimilation /wave1d/tide_cadzand.txt')
+    (bound_times,bound_values)=timeseries.read_series('/Users/markussandnes/Desktop/TU DELFT/Data assimilation /prosjekt/wave1d/tide_cadzand.txt')
     bound_t=np.zeros(len(bound_times))
     for i in np.arange(len(bound_times)):
         bound_t[i]=(bound_times[i]-reftime).total_seconds()
